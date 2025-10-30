@@ -1,5 +1,6 @@
 ###
 # ATM (cash machine) simulator
+#addition
 #
 balance = 1000  # Initial balance
 pin = '1111' # initial 4-digit PIN code
