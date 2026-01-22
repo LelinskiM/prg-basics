@@ -3,6 +3,6 @@
 #
 x=1
 with open('countries.txt', 'r') as file:
-    for line in file:
-        print(x,".",line, end="")
+    for i in file:
+        print(x,".",i, end='')
         x+=1
