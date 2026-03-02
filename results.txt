@@ -1,0 +1,56 @@
+test_p1 (__main__.Test.test_p1) ... ERROR
+test_p10 (__main__.Test.test_p10) ... ERROR
+test_p2 (__main__.Test.test_p2) ... ok
+test_p3 (__main__.Test.test_p3) ... ok
+test_p4 (__main__.Test.test_p4) ... ERROR
+test_p5 (__main__.Test.test_p5) ... ERROR
+test_p6 (__main__.Test.test_p6) ... FAIL
+test_p7 (__main__.Test.test_p7) ... ok
+test_p8 (__main__.Test.test_p8) ... ok
+test_p9 (__main__.Test.test_p9) ... ok
+
+======================================================================
+ERROR: test_p1 (__main__.Test.test_p1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 13, in test_p1
+    import p1
+ModuleNotFoundError: No module named 'p1'
+
+======================================================================
+ERROR: test_p10 (__main__.Test.test_p10)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 63, in test_p10
+    import p10
+ModuleNotFoundError: No module named 'p10'
+
+======================================================================
+ERROR: test_p4 (__main__.Test.test_p4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 29, in test_p4
+    import p4
+ModuleNotFoundError: No module named 'p4'
+
+======================================================================
+ERROR: test_p5 (__main__.Test.test_p5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 34, in test_p5
+    import p5
+ModuleNotFoundError: No module named 'p5'
+
+======================================================================
+FAIL: test_p6 (__main__.Test.test_p6)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 42, in test_p6
+    self.assertEqual(p6.f("za153"),True)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: False != True
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.018s
+
+FAILED (failures=1, errors=4)

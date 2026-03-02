@@ -1,11 +1,12 @@
 # class definition
 class Book():
-    def __init__(self,title,author,pages):
+    def __init__(self,title,author,pages,Price):
         self.title = title
         self.author = author
         self.pages = pages
         self.current_page = 1
         self.is_open = False
+        self.Price = Price
 
     def open(self):
         self.is_open = True
@@ -24,13 +25,14 @@ class Book():
             print(f"I am just reading the book, page {self.current_page}.")
         else:
             print("I am going to read the book later.")
+        print(f"The price of the book is {self.Price}")
 
 
 def main():
     # object creation based on the Book class
     favourite_book = Book(
         "Harry Potter and the Philosopher's Stone",
-        "J. K. Rowling", 223)
+        "J. K. Rowling", 223,48)
 
     # object manipulation
     favourite_book.open()
