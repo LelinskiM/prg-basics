@@ -1,56 +1,65 @@
 test_p1 (__main__.Test.test_p1) ... ERROR
-test_p10 (__main__.Test.test_p10) ... ERROR
+test_p10 (__main__.Test.test_p10) ... ok
 test_p2 (__main__.Test.test_p2) ... ok
-test_p3 (__main__.Test.test_p3) ... ok
-test_p4 (__main__.Test.test_p4) ... ERROR
-test_p5 (__main__.Test.test_p5) ... ERROR
-test_p6 (__main__.Test.test_p6) ... FAIL
-test_p7 (__main__.Test.test_p7) ... ok
-test_p8 (__main__.Test.test_p8) ... ok
-test_p9 (__main__.Test.test_p9) ... ok
+test_p3 (__main__.Test.test_p3) ... FAIL
+test_p4 (__main__.Test.test_p4) ... ok
+test_p5 (__main__.Test.test_p5) ... ok
+test_p6 (__main__.Test.test_p6) ... ERROR
+test_p7 (__main__.Test.test_p7) ... ERROR
+test_p8 (__main__.Test.test_p8) ... ERROR
+test_p9 (__main__.Test.test_p9) ... ERROR
 
 ======================================================================
 ERROR: test_p1 (__main__.Test.test_p1)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 13, in test_p1
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\13-Test3\extratest-en 1.py", line 20, in test_p1
     import p1
 ModuleNotFoundError: No module named 'p1'
 
 ======================================================================
-ERROR: test_p10 (__main__.Test.test_p10)
+ERROR: test_p6 (__main__.Test.test_p6)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 63, in test_p10
-    import p10
-ModuleNotFoundError: No module named 'p10'
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\13-Test3\extratest-en 1.py", line 78, in test_p6
+    import p6
+ModuleNotFoundError: No module named 'p6'
 
 ======================================================================
-ERROR: test_p4 (__main__.Test.test_p4)
+ERROR: test_p7 (__main__.Test.test_p7)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 29, in test_p4
-    import p4
-ModuleNotFoundError: No module named 'p4'
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\13-Test3\extratest-en 1.py", line 93, in test_p7
+    import p7
+ModuleNotFoundError: No module named 'p7'
 
 ======================================================================
-ERROR: test_p5 (__main__.Test.test_p5)
+ERROR: test_p8 (__main__.Test.test_p8)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 34, in test_p5
-    import p5
-ModuleNotFoundError: No module named 'p5'
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\13-Test3\extratest-en 1.py", line 113, in test_p8
+    self.assertEqual(str(c), "22")
+                     ~~~^^^
+TypeError: __str__ returned non-string (type int)
 
 ======================================================================
-FAIL: test_p6 (__main__.Test.test_p6)
+ERROR: test_p9 (__main__.Test.test_p9)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\tests\test 2\check-test2-EN-extra.py", line 42, in test_p6
-    self.assertEqual(p6.f("za153"),True)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
-AssertionError: False != True
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\13-Test3\extratest-en 1.py", line 120, in test_p9
+    import p9
+ModuleNotFoundError: No module named 'p9'
+
+======================================================================
+FAIL: test_p3 (__main__.Test.test_p3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\Mleli\OneDrive\Desktop\Studia\Krakow\prg-basics\13-Test3\extratest-en 1.py", line 50, in test_p3
+    self.assertTrue(p3.f("A_9"))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+AssertionError: False is not true
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.018s
+Ran 10 tests in 0.005s
 
-FAILED (failures=1, errors=4)
+FAILED (failures=1, errors=5)
